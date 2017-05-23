@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style>
+
+	canvas {
+		border: black 10px solid;
+	}
+
+
+	</style>
+</head>
+<body>
+
+<canvas id="canvas" height="500px" width="500px"></canvas>
+
+<script type="text/javascript">
+	
+var canvas = document.getElementById('canvas');
+var context = canvas.getContext('2d');
+
+
+// Make the pen red.
+context.strokeStyle = "#FF0000";
+
+// Make the line 10px wide.
+context.lineWidth = 10;
+
+// Draw a fail star.
+// context.lineTo(200,100);
+// context.lineTo(200,200);
+// context.lineTo(300,100);
+// context.lineTo(300,150);
+// context.lineTo(200,200);
+
+// Fill the line in.
+// context.stroke();
+
+context.closePath();
+
+
+// Use context to draw an arc with center (50,50) and radius 75, drawn with arc from 0 radians (3 o clock) to 2 pi radians.
+// context.arc(150,150, 75, 0*Math.PI, 2*Math.PI)
+
+// Fill the circle.
+context.fillStyle="#0000FF";
+context.fill()
+
+
+function Ball(x, y, radius, r, g, b) {
+	this.x = x;
+	this.y = y;
+	this.radius = radius;
+	this.r = r;
+	this.g = g;
+	this.b = b;
+	this.arcStart = 0;
+	this.arcEnd = Math.PI * 2;
+	this.canvas = canvas;
+	this.xDirection = 4;
+	this.yDirection =1;
+}
+
+Ball.prototype.updateBall = function() {
+	if(this.x >= 500 - this.radius) {
+		this.xDirection = -4;
+	} else if (this.x <= this.radius) {
+		this.xDirection = 4;
+	}
+	if(this.y >= 500 - this.radius) {
+		this.yDirection = -1;
+	} else if (this.y <= this.radius) {
+		this.yDirection = 1;
+	}
+	this.x += this.xDirection;
+	this.y += this.yDirection;
+}
+
+Ball.prototype.draw = function() {
+	context.fillStyle = "rgb("+ this.r + "," + this.g + "," + this.b + ")";
+
+	// Start a new drawing
+	context.beginPath();
+	context.arc(this.x, this.y, this.radius, this.arcStart, this.arcEnd);
+	context.fill();
+}
+
+function run() {
+	context.clearRect(0, 0, 500, 500);
+	for (let i = 0; i < balls.length; i++) {
+		balls[i].updateBall();
+		balls[i].draw();
+	}
+	requestAnimationFrame(run);
+}
+
+var balls =[]
+balls.push(new Ball(150, 150, 75, 0, 0, 255));
+balls.push(new Ball(250, 350, 75, 0, 255, 0));
+
+var ball = new Ball(150, 150, 75, 0, 0, 255);
+run();
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+	background-color: #CFD8DC;
+}
+
+canvas {
+	border: black 3px solid;
+}
+
+#temp-info {
+	height: 100px;
+	margin: auto;
+	/*background-color: #E0E0E0;*/
+	margin: 10px 0px;
+}
+
+/*.form-wrapper {
+	margin-top: 15px;
+}*/
+
+.main {
+	height: 100vh;
+	background-color: #B0BEC5;
+}
+
+.widget-wrapper {
+	background-color: #B0BEC5;
+	height: 100vh;
+}
+
+.forecast-main {
+/*	background-color: #E0E0E0;*/
+	margin-top: 40px;
+	height: 20vh;
+}
+
+.form-wrapper {
+	border: 2px solid green;
+}
+
+.forecast-wrapper {
+	border: 2px solid blue;
+}
+
+.daily-wrapper {
+	border: 2px solid yellow;
+}
+

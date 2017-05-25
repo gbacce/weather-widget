@@ -1,9 +1,33 @@
 body {
-	background-color: #CFD8DC;
+	/*background-color: #CFD8DC;*/
+	background: url("../images/blueskybackground.png") fixed no-repeat left top;
+	height: 100vh;
 }
 
+.spacer {
+	height: 5vh;
+}
+
+.location {
+	color: white;
+	height: 5vh;
+	text-align: center;
+	font-family: Roboto, sans-serif;
+	vertical-align: center
+	color: white;
+	font-size: 55px;
+	vertical-align: middle;
+
+}
+
+
+
 canvas {
-	border: black 3px solid;
+	/*border: black 2px solid;*/
+}
+
+.current-weather-image {
+	border: black 2px solid;
 }
 
 #temp-info {
@@ -13,35 +37,117 @@ canvas {
 	margin: 10px 0px;
 }
 
-/*.form-wrapper {
-	margin-top: 15px;
-}*/
+.widget-wrapper {
+	background-color: rgba(68, 124, 181, 0.4);
+	height: 90vh;
+	position: relative;
+}
+
+.info-wrapper {
+	padding: 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.info-left {
+	padding: 0px;
+}
+
+.info-center {
+	padding: 0px;
+}
+
+.info-right {
+	padding: 0px;
+}
+
+.high-today {
+	padding: 0px;
+	height: 50px;
+	border: black solid 2px;
+}
+
+.low-today {
+	padding: 0px;
+	height: 50px;
+	border: black solid 2px;
+}
+
+.rain-today {
+	padding: 0px;
+	height: 55px;
+	border: black solid 2px;
+}
+
+.wind-today {
+	padding: 0px;
+	height: 55px;
+	border: black solid 2px;
+}
+
+.wind-arrow {
+	padding: 0px;
+	height: 160px;
+	border: black solid 2px;
+}
+
+.canvas-wrapper {
+	padding: 0px;
+}
+
+.info-left {
+	padding: 0px;
+}
+
+.form-wrapper {
+	padding: 0px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 
 .main {
-	height: 100vh;
-	background-color: #B0BEC5;
+	/*background-color: #B0BEC5;*/
 }
 
 .widget-wrapper {
-	background-color: #B0BEC5;
-	height: 100vh;
+	/*background-color: #B0BEC5;*/
 }
 
 .forecast-main {
 /*	background-color: #E0E0E0;*/
 	margin-top: 40px;
-	height: 20vh;
+	height: 15vh;
 }
 
 .form-wrapper {
-	border: 2px solid green;
+/*	border: 2px solid green;*/
 }
 
 .forecast-wrapper {
-	border: 2px solid blue;
+	padding: 0px;
 }
 
-.daily-wrapper {
-	border: 2px solid yellow;
+.current-weather-wrapper {
+	/*border: 2px solid yellow;*/
+	height: 70vh;
+	position: relative;
 }
 
+form {
+	padding: 5px 0px;
+}
+
+input {
+	max-width: 70%;
+}
+
+button {
+	width: 10%;
+}
+
+.forecast {
+	border: blue 2px dashed;
+	height: 150px;
+}

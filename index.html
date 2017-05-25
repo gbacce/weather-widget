@@ -16,33 +16,58 @@
 
 
 <div class="container">
+	<div class="row spacer">
+	</div>
 	<div class="row">
 		<div class="col-sm-12 main">
-			<div class="col-sm-offset-3 col-sm-6 widget-wrapper">
-				<div class ="col-sm-12 daily-wrapper">
+			<div class="col-sm-3 left-column">
+			</div>
+			<div class="col-sm-6 widget-wrapper">
+				<div class ="col-sm-12 current-weather-wrapper">
+					<div class="col-sm-12 location">
+						Atlanta
+					</div>
 					<div class="col-sm-12 canvas-wrapper">
 						<canvas id="weather-canvas" height="500px" width="500px"></canvas>
 					</div>
-					<div class="col-sm-12" id="temp-info">
+					<div class="col-sm-12 info-wrapper">
+						<div class="col-sm-4 info-left">
+							<div class="col-sm-12 current-weather-image">
+							</div>
+						</div>
+						<div class="col-sm-4 info-center">
+							<div class="col-sm-6 high-today"></div>
+							<div class="col-sm-6 low-today"></div>
+							<div class="col-sm-12 rain-today"></div>
+							<div class="col-sm-12 wind-today"></div>
+						</div>
+						<div class="col-sm-4 info-right">
+							<div class="col-sm-12 wind-arrow">
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class = "col-sm-12 forecast-wrapper">
-					<div class ="col-sm-12 forecast day-2">
+					<div class ="col-sm-3 forecast day-2">
 					</div>
-					<div class ="col-sm-12 forecast day-3">
+					<div class ="col-sm-3 forecast day-3">
 					</div>
-					<div class ="col-sm-12 forecast day-4">
+					<div class ="col-sm-3 forecast day-4">
 					</div>
-					<div class ="col-sm-12 forecast day-5">
+					<div class ="col-sm-3 forecast day-5">
 					</div>
 				</div>
 				<div class="col-sm-12 form-wrapper">
-					<form id="weather-form">
-						<label>Please enter a zip code to search</label>
-						<input type="text" id="zip-code" placeholder="30066" />
-						<button type="submit" class="btn btn-primary"></button>
-					</form>
+					<div class="col-sm-offset-4 col-sm-4">
+						<form id="weather-form">
+							<label></label>
+							<input type="text" id="zipcode" placeholder="Enter ZIP code" />
+							<button type="submit" class="btn btn-primary"></button>
+						</form>
+					</div>
 				</div>
+			</div>
+			<div class="col-sm-3 right-column">
 			</div>
 		</div>
 	</div>

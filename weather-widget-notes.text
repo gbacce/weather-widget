@@ -1,0 +1,66 @@
+
+Model widget after this page:
+	http://3.bp.blogspot.com/-7fJEEyGgwMY/USEIWzSOM5I/AAAAAAAANxM/tXn0WiK5nP4/s1600/my-weather-iindicator-widget_2.png
+
+
+/// HTML ///
+
+Build out HTML structure based on weather app model.
+	- Rearrange the current weather div to match the model. 
+	- Add a current temperature div that updates temperature to overlay on canvas animation.
+	- Add a forecast div under the current weather div. 
+		- Add 4 divs inside of it ("col-sm-3") for the additional forecasts.
+		- Structure additional divs within each of the day of the week divs.
+
+Use bootstrap to make the widget compatible with mobile and tablet.
+
+
+
+/// BACKGROUND ///
+
+Change background image depending on local weather.
+
+Use background gifs (rather than static images).
+
+
+
+/// 5 DAY FORECAST ///
+
+Add a forecast div under the current weather div.
+
+
+
+/// STYLING ///
+
+Center the weather widget vertically on the page.
+
+Style ZIP code form and button.
+
+
+
+/// FEATURES ///
+
+Add image that represents current weather to each day of the week div. (Try to find gifs if possible)
+
+Use sunrise/sunset data to return different images and backgrounds depending on if it is day or night.
+
+
+
+/// AJAX ///
+
+Use placeholder values in HTML and build the page first. Once the structure has been laid out, write functions that update the value of the placeholders.
+
+
+
+
+/// OPTIONAL ///
+
+Add an animated arrow div that points in the direction of the wind.
+
+Add modal when a day of the week div is clicked that shows the 3 hour forecasts including the expected temperature, a weather image, and possibly more information.
+
+Add local storage variable that remembers the last user search.
+
+Add sounds to play depending on current weather. Thunderstorm, rain, wind, birds chirping, owls and night sounds, etc. Set a default wind or ambient noise sound. And add an option to enable or disable sound in the corner of the screen.
+
+Add animations such as airplanes or 

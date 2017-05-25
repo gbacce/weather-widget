@@ -8,8 +8,8 @@ $(document).ready(()=> {
 
 	$('#weather-form').submit(function(event){
 		event.preventDefault();
-		var zipCode = $('#zip-code').val();
-		var weatherUrl = `${weatherAPI}?zip=${zipCode},us&units=imperial&appid=${apiKey}`;
+		var zipCode = $('#zipcode').val();
+		var weatherUrl = `${weatherAPI}?zip=${zipcode},us&units=imperial&appid=${apiKey}`;
 		$.getJSON(weatherUrl, (weatherData)=>{
 			console.log(weatherData);
 			var currentTemperature = weatherData.main.temp;
@@ -59,14 +59,14 @@ $(document).ready(()=> {
 		// Draw inner circle
 		context.fillStyle = "#ccc";
 		context.beginPath();
-		context.arc(155, 75, 70, Math.PI * 0, Math.PI * 2);
+		context.arc(250, 250, 200, Math.PI * 0, Math.PI * 2);
 		context.closePath();
 		context.fill();
 
 
 		// Draw outer line
 
-		context.lineWidth = 5;
+		context.lineWidth = 10;
 
 		if (currentTemperature > 80) {
 			context.strokeStyle = '#FF5722';
@@ -77,7 +77,7 @@ $(document).ready(()=> {
 		}
 	
 		context.beginPath();
-		context.arc(155, 75, 75, Math.PI*1.5, (Math.PI*1.5 + (Math.PI *2*currentArc)));
+		context.arc(250, 250, 200, Math.PI*1.5, (Math.PI*1.5 + (Math.PI *2*currentArc)));
 		context.stroke(); 
 
 

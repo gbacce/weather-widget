@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///Users/gbacce/Desktop/DigitalCrafts/4-17immersive/unit2/movie-app/index.html? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>jQuery Version of Movie App</title>
+
+
+<link rel="stylesheet" href="./jQuery Version of Movie App_files/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./jQuery Version of Movie App_files/styles.css">
+
+<script src="./jQuery Version of Movie App_files/jquery.min.js"></script>
+<script src="./jQuery Version of Movie App_files/isotope.pkgd.min.js"></script>
+<script src="./jQuery Version of Movie App_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./jQuery Version of Movie App_files/config.js"></script>
+<script type="text/javascript" src="./jQuery Version of Movie App_files/scripts.js"></script>
+
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css" type="text/css" media="screen" /> -->
+
+
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+
+		<div id="search-container" class="col-sm-12 text-center">
+			<form id="">
+				<input id="search-input" type="text" placeholder="Enter movie name">
+				<button type="submit" class="btn btn-primary">Search</button>
+			</form>
+		</div>
+
+    <div id="genre-buttons" class="col-sm-12 text-center"><button class="btn btn-primary genre-button">Action</button><button class="btn btn-primary genre-button">Adventure</button><button class="btn btn-primary genre-button">Animation</button><button class="btn btn-primary genre-button">Comedy</button><button class="btn btn-primary genre-button">Crime</button><button class="btn btn-primary genre-button">Documentary</button><button class="btn btn-primary genre-button">Drama</button><button class="btn btn-primary genre-button">Family</button><button class="btn btn-primary genre-button">Fantasy</button><button class="btn btn-primary genre-button">History</button><button class="btn btn-primary genre-button">Horror</button><button class="btn btn-primary genre-button">Music</button><button class="btn btn-primary genre-button">Mystery</button><button class="btn btn-primary genre-button">Romance</button><button class="btn btn-primary genre-button">Science-Fiction</button><button class="btn btn-primary genre-button">TV-Movie</button><button class="btn btn-primary genre-button">Thriller</button><button class="btn btn-primary genre-button">War</button><button class="btn btn-primary genre-button">Western</button></div>
+
+
+		<div id="movie-grid" class="col-sm-12" style="position: relative; height: 0px;"><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction movie-poster" id="283995" style="position: absolute; left: 15px; top: 0px; display: none;"><img src="./jQuery Version of Movie App_files/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller movie-poster" id="126889" style="position: absolute; left: 307px; top: 0px; display: none;"><img src="./jQuery Version of Movie App_files/ewVHnq4lUiovxBCu64qxq5bT2lu.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy movie-poster" id="166426" style="position: absolute; left: 600px; top: 0px; display: none;"><img src="./jQuery Version of Movie App_files/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller movie-poster" id="337339" style="position: absolute; left: 15px; top: 450px; display: none;"><img src="./jQuery Version of Movie App_files/iNpz2DgTsTMPaDRZq2tnbqjL2vF.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller movie-poster" id="419430" style="position: absolute; left: 307px; top: 450px; display: none;"><img src="./jQuery Version of Movie App_files/1SwAVYpuLj8KsHxllTF8Dt9dSSX.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family movie-poster" id="295693" style="position: absolute; left: 600px; top: 450px; display: none;"><img src="./jQuery Version of Movie App_files/7RG8JNttOk9RSr8qySdpZRYsl8E.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy movie-poster" id="274857" style="position: absolute; left: 15px; top: 900px; display: none;"><img src="./jQuery Version of Movie App_files/5qtySjfuJfOLvVrVXuwNo2BIVPH.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller movie-poster" id="381288" style="position: absolute; left: 307px; top: 900px; display: none;"><img src="./jQuery Version of Movie App_files/rXMWOZiCt6eMX22jWuTOSdQ98bY.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction movie-poster" id="297762" style="position: absolute; left: 600px; top: 900px; display: none;"><img src="./jQuery Version of Movie App_files/gfJGlDaHuWimErCr5Ql0I8x9QSy.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama movie-poster" id="382591" style="position: absolute; left: 15px; top: 1350px; display: none;"><img src="./jQuery Version of Movie App_files/muwaDIv5cLv2Z07CZFWOsL7lYuO.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy movie-poster" id="339846" style="position: absolute; left: 307px; top: 1350px; display: none;"><img src="./jQuery Version of Movie App_files/rxQynWvwl41VbJGb0FEyYtuRwS2.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller movie-poster" id="324552" style="position: absolute; left: 600px; top: 1350px; display: none;"><img src="./jQuery Version of Movie App_files/zkXnKIwX5pYorKJp2fjFSfNyKT0.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history movie-poster" id="381284" style="position: absolute; left: 15px; top: 1800px; display: none;"><img src="./jQuery Version of Movie App_files/6cbIDZLfwUTmttXTmNi8Mp3Rnmg.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy movie-poster" id="258230" style="position: absolute; left: 307px; top: 1800px; display: none;"><img src="./jQuery Version of Movie App_files/vdHUj9cyRe7fIYdJFMyc7elnawC.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy action movie-poster" id="348893" style="position: absolute; left: 600px; top: 1800px; display: none;"><img src="./jQuery Version of Movie App_files/mWiqc87iTs1qujxm2Q0NRzGvWSN.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy action animation drama fantasy romance movie-poster" id="372058" style="position: absolute; left: 15px; top: 2250px; display: none;"><img src="./jQuery Version of Movie App_files/xq1Ugd62d23K2knRUx6xxuALTZB.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy action animation drama fantasy romance drama science-fiction thriller movie-poster" id="339988" style="position: absolute; left: 307px; top: 2250px; display: none;"><img src="./jQuery Version of Movie App_files/bQVqd5rWrx5GbXhJNuvKy4Viz6j.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy action animation drama fantasy romance drama science-fiction thriller drama mystery thriller movie-poster" id="397837" style="position: absolute; left: 600px; top: 2250px; display: none;"><img src="./jQuery Version of Movie App_files/eowzonDJMCuNXoJGVkP9Z7oCmiM.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy action animation drama fantasy romance drama science-fiction thriller drama mystery thriller drama movie-poster" id="376867" style="position: absolute; left: 15px; top: 2700px; display: none;"><img src="./jQuery Version of Movie App_files/qAwFbszz0kRyTuXmMeKQZCX3Q2O.jpg"></div><div class="col-sm-6 col-md-3 undefinedaction adventure comedy science-fiction horror science-fiction thriller action adventure comedy fantasy action crime thriller horror mystery thriller animation comedy family action drama fantasy horror thriller action adventure fantasy science-fiction comedy drama action comedy action crime thriller drama history drama fantasy action animation drama fantasy romance drama science-fiction thriller drama mystery thriller drama action adventure war movie-poster" id="350312" style="position: absolute; left: 307px; top: 2700px; display: none;"><img src="./jQuery Version of Movie App_files/sXf30F2HFpsFPXlNz7jpOySSV9I.jpg"></div></div>
+	</div>
+</div>
+
+
+	<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Launch demo modal
+	</button>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</body></html>

@@ -1,5 +1,4 @@
 
-
 $(document).ready(()=> {
 
 	const weatherAPI = 'http://api.openweathermap.org/data/2.5/weather';
@@ -9,7 +8,7 @@ $(document).ready(()=> {
 	$('#weather-form').submit(function(event){
 		event.preventDefault();
 		var zipCode = $('#zipcode').val();
-		var weatherUrl = `${weatherAPI}?zip=${zipcode},us&units=imperial&appid=${apiKey}`;
+		var weatherUrl = `${weatherAPI}?zip=${zipCode},us&units=imperial&appid=${apiKey}`;
 		$.getJSON(weatherUrl, (weatherData)=>{
 			console.log(weatherData);
 			var currentTemperature = weatherData.main.temp;

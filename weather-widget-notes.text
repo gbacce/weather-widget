@@ -3,6 +3,7 @@ Model widget after this page:
 	http://3.bp.blogspot.com/-7fJEEyGgwMY/USEIWzSOM5I/AAAAAAAANxM/tXn0WiK5nP4/s1600/my-weather-iindicator-widget_2.png
 
 
+
 /// HTML ///
 
 Build out HTML structure based on weather app model.
@@ -35,6 +36,30 @@ Add a forecast div under the current weather div.
 Center the weather widget vertically on the page.
 
 Style ZIP code form and button.
+
+
+/// ANIMATION /// 	(These relatively simple animations will really make the program, and by extension, my portfolio, stand out).
+
+When page loads, only display a form asking for ZIP code in the DOM. 
+
+Once ZIP code is entered, simultaneously:
+
+	- Introduce the main div with a 3D animation in which it essentially rotates in from below the screen.
+
+	OR (maybe even better), rotate the main div in on its y-axis as if it were there all along but invisible because you were looking at its side profile.
+
+	- Animate a slow fade between backgrounds once ZIP code is entered to reflect the local weather.
+
+Once that animation is complete, simultaneously:
+
+	- Run the canvas and wind arrow animations.
+
+	- Introduce content with a gradual fade (rather than displaying it the entire time).
+
+If another ZIP code is entered, rotate the div out on the same axis as it came in while simultaneously introducing the next one. As if they were both fixed on the same axis.
+
+
+
 
 
 
